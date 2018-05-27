@@ -9,17 +9,9 @@ max_number = 0
 
 loop do
   str = input.slice(start..target_digits).split("").map{|val| val.to_i}
-  str_reversed = input_reversed.reverse.slice(start..target_digits).split("").map{|val| val.to_i}
 
   if !str.include?(0)
     calculated_num = str.reduce(:*)
-    if max_number < calculated_num
-      max_number = calculated_num
-    end
-  end
-
-  if !str_reversed.include?(0)
-    calculated_num = str_reversed.reduce(:*)
     if max_number < calculated_num
       max_number = calculated_num
     end
