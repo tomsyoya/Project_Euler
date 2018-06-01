@@ -1,3 +1,5 @@
+start = Time.now
+
 prime_factors = (2..Math.sqrt(2_000_000)).to_a
 
 for i in prime_factors
@@ -10,4 +12,8 @@ for num in ((prime_factors.last + 1)..2_000_000)
   primes << num unless prime_factors.find{|factor| num % factor == 0}
 end
 
-p primes.concat(prime_factors).sort.uniq.reduce(:+)
+p primes.concat(prime_factors).sort.reduce(:+)
+
+finish = Time.now
+
+p finish.to_f - start.to_f
