@@ -48,7 +48,6 @@ end
 def calc_max_diagonal_numbers(num_array)
   diagonal_lines = []
 
-  #右下方向の斜め線を計算
   first_line = num_array[0]
   for num in 0..first_line.length-1
     line = [first_line[num]]
@@ -60,7 +59,7 @@ def calc_max_diagonal_numbers(num_array)
     diagonal_lines << line if line.length >= 4
   end
 
-　#左下方向の斜め線を計算
+
   reverse_num_array = num_array.map{|ary| ary.reverse }
   first_line = reverse_num_array[0]
 
