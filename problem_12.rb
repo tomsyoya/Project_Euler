@@ -1,3 +1,4 @@
+# 参考元: http://kashiyuki.hatenablog.com/entry/2017/03/04/144428
 def get_trianguler_number(num)
   (num * (num + 1)) / 2
 end
@@ -21,7 +22,6 @@ loop do
   trianguler_number = get_trianguler_number(number)
   divisors = get_divisors(trianguler_number)
 
-p divisors
   break if divisors.length > 500
 
   number += 1
