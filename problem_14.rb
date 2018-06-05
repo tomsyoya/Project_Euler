@@ -1,3 +1,4 @@
+
 def calc_num_by_odd_or_even(num)
   koraz_sequence = []
   while num != 1
