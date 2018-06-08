@@ -1,0 +1,1 @@
+p (2..100).to_a.reduce(:*).to_s.split("").map{|val| val.to_i }.reduce(:+)
