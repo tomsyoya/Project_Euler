@@ -1,0 +1,1 @@
+p ((1..40).to_a.reduce(:*)) / ((1..20).to_a.reduce(:*) * (1..20).to_a.reduce(:*))
