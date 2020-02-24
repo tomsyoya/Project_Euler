@@ -3,4 +3,4 @@
 ## overview
 https://projecteuler.net/ で問題を解いたときのアルゴリズムを置いてあります。
 
-Rubyを使ったアルゴリズムの練習用。
+Ruby、C言語を使ったアルゴリズムの練習用。
